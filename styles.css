@@ -53,12 +53,15 @@ select {
 .blog-container {
   width: 90%;
   position: relative;
+  z-index: 1;
   max-width: 375px;
   background-color: var(--White);
   border-radius: 7px;
   border: 1px solid black;
   padding: 15px 15px;
   margin: 20px 20px;
+  animation: fadeInDown;
+  animation-duration: 2s;
 }
 
 .blog-container::before {
@@ -70,6 +73,11 @@ select {
   left: 0;
   box-shadow: 10px 9px 0 0 var(--Black);
   border-radius: 10px;
+  z-index: 999;
+}
+
+.blog-container::after {
+  content: "";
 }
 
 .blog-content {
