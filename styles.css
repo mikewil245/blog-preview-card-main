@@ -6,7 +6,6 @@
   --FigTreeExtraBold: "FigTreeExtraBold", sans-serif;
   --FigTreeSemiBold: "FigTreeSemiBold", sans-serif;
   --FigTreeItalic: "FigTreeItalic", sans-serif;
-  --MarginTop: 10px;
 }
 
 @font-face {
@@ -138,10 +137,10 @@ footer {
 
 .blog-container {
   background-color: var(--White);
-  border-radius: 0.625rem;
+  border-radius: 0.9rem;
   width: 20.4375rem;
   padding: 1.25rem;
-  box-shadow: 0.5rem 0.5rem 0px black;
+  box-shadow: 0.4rem 0.5rem 0px black;
   border: 0.0625rem solid black;
 }
 
