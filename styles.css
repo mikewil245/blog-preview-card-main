@@ -1,0 +1,152 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+  --FigTreeExtraBold: "FigTreeExtraBold", sans-serif;
+  --FigTreeSemiBold: "FigTreeSemiBold", sans-serif;
+  --FigTreeItalic: "FigTreeItalic", sans-serif;
+  --MarginTop: 10px;
+}
+
+@font-face {
+  font-family: "FigTreeExtraBold";
+  src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FigTreeSemiBold";
+  src: url("assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FigTreeItalic";
+  src: url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--Yellow);
+  /*line-height: 1.5;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* overflow-wrap: break-word;*/
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.group1 .learning-tab {
+  font-family: var(--FigTreeExtraBold);
+  background-color: var(--Yellow);
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 4px 12px 4px 12px;
+  border-radius: 4px;
+  width: 76px;
+  margin-top: 24px;
+}
+
+.group1 .pub-date {
+  font-family: var(--FigTreeSemiBold);
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.blog-content h1 {
+  font-family: var(--FigTreeExtraBold);
+  font-size: 1.2rem;
+  margin-top: 0.75rem;
+  transition: background-color 0.5s ease-in, transform 0.3s ease-in;
+}
+
+.blog-content p {
+  font-family: var(--FigTreeSemiBold);
+  font-size: 0.9rem;
+  color: var(--Gray500);
+  margin-top: 0.75rem;
+}
+
+.footer-img img {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer .person-name {
+  font-family: var(--FigTreeExtraBold);
+  font-size: 0.9rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.blog-img img {
+  border-radius: 0.625rem;
+}
+
+.blog-container {
+  background-color: var(--White);
+  border-radius: 0.625rem;
+  width: 20.4375rem;
+  padding: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0px black;
+  border: 0.0625rem solid black;
+}
+
+h1:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+  transform: scale(1.06);
+}
